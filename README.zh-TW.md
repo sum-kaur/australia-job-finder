@@ -58,7 +58,7 @@ australia-job-finder 具有代理能力：Claude Code 透過 Playwright 瀏覽�
 
 > **注意：最初幾次評估的品質可能不盡理想。** 因為系統還不了解你。請提供更多背景資訊 — 你的履歷、職涯故事、成就佐證、個人偏好、你的專長以及希望避免的事情。你餵給它的資訊越多，它就越準確。把它當作招募新人的招募顧問：第一週需要學習認識你，之後就會成為不可或缺的夥伴。
 
-這個系統由一位親身使用它評估超過 740 份職缺、生成超過 100 份客製化履歷、並成功獲得 Head of Applied AI 職位的人所打造。[閱讀完整案例研究](https://sumneet.com/australia-job-finder-system)。
+這個系統由一位親身使用它評估超過 740 份職缺、生成超過 100 份客製化履歷、並成功獲得 Head of Applied AI 職位的人所打造。[閱讀完整案例研究](https://santifer.io/australia-job-finder-system)。
 
 ## 功能特色
 
@@ -228,13 +228,13 @@ career-ops/
 
 ## 同樣開源
 
-- **[cv-santiago](https://github.com/sum-kaur/cv-santiago)** — 作者的作品集網站（sumneet.com），包含 AI 聊天機器人、LLMOps 儀表板與案例研究。如果你需要一個在求職過程中展示的作品集，可以 fork 它並改造成你自己的。
+- **[cv-santiago](https://github.com/santifer/cv-santiago)** — 作者的作品集網站（santifer.io），包含 AI 聊天機器人、LLMOps 儀表板與案例研究。如果你需要一個在求職過程中展示的作品集，可以 fork 它並改造成你自己的。
 
 ## 關於作者
 
 我是 Santiago — Head of Applied AI，前創業者（創建並出售了一家至今仍以我名字營運的公司）。我打造 australia-job-finder 是為了管理自己的求職過程，並成功用它找到了現在這份工作。
 
-個人作品集與其他開源專案 → [sumneet.com](https://sumneet.com)
+個人作品集與其他開源專案 → [santifer.io](https://santifer.io)
 
 ## Star 歷史
 
@@ -271,8 +271,8 @@ MIT
 
 ## 聯絡我
 
-[![Website](https://img.shields.io/badge/sumneet.com-000?style=for-the-badge&logo=safari&logoColor=white)](https://sumneet.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/sumneet-kaur)
+[![Website](https://img.shields.io/badge/santifer.io-000?style=for-the-badge&logo=safari&logoColor=white)](https://santifer.io)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/santiago-fv)
 [![X](https://img.shields.io/badge/X-000?style=for-the-badge&logo=x&logoColor=white)](https://github.com/sum-kaur)
 [![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/8pRpHETxa4)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hi@sumneet.com)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hi@santifer.io)

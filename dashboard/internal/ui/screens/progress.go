@@ -383,7 +383,7 @@ func (m ProgressModel) renderHelp() string {
 	keyStyle := lipgloss.NewStyle().Bold(true).Foreground(m.theme.Text)
 	descStyle := lipgloss.NewStyle().Foreground(m.theme.Subtext)
 
-	brand := lipgloss.NewStyle().Foreground(m.theme.Overlay).Render("australia-job-finder by sumneet.com")
+	brand := lipgloss.NewStyle().Foreground(m.theme.Overlay).Render("australia-job-finder by santifer.io")
 
 	keys := keyStyle.Render("\u2191\u2193") + descStyle.Render(" scroll  ") +
 		keyStyle.Render("PgUp/Dn") + descStyle.Render(" page  ") +

@@ -55,7 +55,7 @@ australia-job-finderはエージェンティックです: Claude CodeがPlaywrig
 
 > **ご注意: 最初の評価はあまり良くありません。** システムはまだあなたのことを知らないからです。コンテキストを与えてください -- CV、キャリアストーリー、実績の裏付け、好み、得意なこと、避けたいこと。育てれば育てるほど精度が上がります。新人リクルーターをオンボーディングするのと同じです: 最初の1週間はあなたについて学ぶ必要があり、その後かけがえのない存在になります。
 
-このシステムは、740件以上の求人を評価し、100件以上のテーラーメイドCVを生成し、Head of Applied AIのポジションを獲得した人物によって作られました。[詳細なケーススタディを読む](https://sumneet.com/australia-job-finder-system)。
+このシステムは、740件以上の求人を評価し、100件以上のテーラーメイドCVを生成し、Head of Applied AIのポジションを獲得した人物によって作られました。[詳細なケーススタディを読む](https://santifer.io/australia-job-finder-system)。
 
 ## 機能
 
@@ -225,13 +225,13 @@ career-ops/
 
 ## 同じくオープンソース
 
-- **[cv-santiago](https://github.com/sum-kaur/cv-santiago)** -- AIチャットボット、LLMOpsダッシュボード、ケーススタディ付きのポートフォリオサイト（sumneet.com）。求職活動と並行して提示するポートフォリオが必要なら、フォークして自分のものにしてください。
+- **[cv-santiago](https://github.com/santifer/cv-santiago)** -- AIチャットボット、LLMOpsダッシュボード、ケーススタディ付きのポートフォリオサイト（santifer.io）。求職活動と並行して提示するポートフォリオが必要なら、フォークして自分のものにしてください。
 
 ## 作者について
 
 Santiagoです -- Head of Applied AI、元創業者（自分の名前を冠した事業を立ち上げて売却、その事業は今も稼働中）。australia-job-finderは自分自身の求職活動を管理するために作りました。結果、現職を獲得することに成功しました。
 
-ポートフォリオと他のオープンソースプロジェクト → [sumneet.com](https://sumneet.com)
+ポートフォリオと他のオープンソースプロジェクト → [santifer.io](https://santifer.io)
 
 ## Star History
 
@@ -260,7 +260,7 @@ MIT
 
 ## つながりましょう
 
-[![Website](https://img.shields.io/badge/sumneet.com-000?style=for-the-badge&logo=safari&logoColor=white)](https://sumneet.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/sumneet-kaur)
+[![Website](https://img.shields.io/badge/santifer.io-000?style=for-the-badge&logo=safari&logoColor=white)](https://santifer.io)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/santiago-fv)
 [![X](https://img.shields.io/badge/X-000?style=for-the-badge&logo=x&logoColor=white)](https://github.com/sum-kaur)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hi@sumneet.com)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hi@santifer.io)

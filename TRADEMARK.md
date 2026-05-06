@@ -10,7 +10,7 @@ the source code.
 - **This policy covers the name and brand.** It's intentionally
   permissive for community use and reserved for commercial product
   naming and endorsement.
-- **In doubt? Ask.** hi@sumneet.com, subject `Trademark request`.
+- **In doubt? Ask.** hi@santifer.io, subject `Trademark request`.
 
 ## The relationship with the MIT license
 
@@ -65,7 +65,7 @@ use suggests an official relationship that doesn't exist, please ask.
 
 ## How to request permission
 
-Email **hi@sumneet.com** with subject **"Trademark request — [your use case]"**
+Email **hi@santifer.io** with subject **"Trademark request — [your use case]"**
 and include:
 
 1. What you'd like to use the name for

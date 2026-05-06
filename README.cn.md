@@ -59,7 +59,7 @@ australia-job-finder 具备代理式工作能力：Claude Code 会用 Playwright
 
 > **提醒：最开始几次评估不会特别准。** 系统还不了解你。请给它更多上下文，比如你的简历、职业故事、成果证明、个人偏好、擅长的事、想避开的事。你喂给它的信息越多，它就越准确。把它当成在培养一个新招聘顾问：第一周它需要先了解你，之后就会变得非常有价值。
 
-这个系统的作者曾用它评估 740 多个职位、生成 100 多份定制简历，并拿到一份 Head of Applied AI 的工作。[阅读完整案例研究](https://sumneet.com/australia-job-finder-system)。
+这个系统的作者曾用它评估 740 多个职位、生成 100 多份定制简历，并拿到一份 Head of Applied AI 的工作。[阅读完整案例研究](https://santifer.io/australia-job-finder-system)。
 
 ## 功能特性
 
@@ -228,13 +228,13 @@ career-ops/
 
 ## 也已开源
 
-- **[cv-santiago](https://github.com/sum-kaur/cv-santiago)**：作者的作品集网站（sumneet.com），包含 AI 聊天机器人、LLMOps Dashboard 和案例研究。如果你也需要一个能在求职时展示的作品集，可以 fork 它然后改成自己的版本。
+- **[cv-santiago](https://github.com/santifer/cv-santiago)**：作者的作品集网站（santifer.io），包含 AI 聊天机器人、LLMOps Dashboard 和案例研究。如果你也需要一个能在求职时展示的作品集，可以 fork 它然后改成自己的版本。
 
 ## 关于作者
 
 我是 Santiago，现任 Head of Applied AI，也曾是一名创业者（创建并出售过一家公司，那家公司至今仍以我的名字运营）。我构建 australia-job-finder 是为了管理我自己的求职流程，而它确实奏效了：我用它拿到了现在这份工作。
 
-我的作品集和其他开源项目 → [sumneet.com](https://sumneet.com)
+我的作品集和其他开源项目 → [santifer.io](https://santifer.io)
 
 ## Star 历史
 
