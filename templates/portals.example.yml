@@ -24,6 +24,34 @@
 # The scanner uses these keywords to decide if a title is relevant.
 # At least 1 positive must match AND 0 negatives must match (case-insensitive).
 
+# -- Location filter (optional) --
+# Drop jobs whose location field contains any of these strings.
+# Useful for AU/NZ candidates to exclude offshore roles from global companies.
+# Remove or leave empty to accept all locations.
+#
+# Example for AU-based candidates:
+# exclude_locations:
+#   - "India"
+#   - "Bengaluru"
+#   - "Bangalore"
+#   - "Philippines"
+#   - "Singapore"
+#   - "SG - "
+#   - "United States"
+#   - "US - "
+#   - "United Kingdom"
+#   - "UK - "
+#   - "London"
+#
+# Example for EU/DACH candidates:
+# exclude_locations:
+#   - "India"
+#   - "Philippines"
+#   - "United States"
+#   - "US - "
+
+exclude_locations: []
+
 title_filter:
   positive:
     # [CUSTOMIZE] Add keywords matching YOUR target roles
@@ -942,3 +970,143 @@ tracked_companies:
     scan_query: '"Maxim AI" OR "getmaxim" careers "engineer" OR "product"'
     notes: "AI evaluation and observability platform. Bangalore-based, mostly on-site."
     enabled: true
+
+  # ---------------------------------------------------------------------------
+  # -- Australia & New Zealand tech --
+  # All ATS slugs below are verified. Companies are HQ'd or hire actively in AU.
+  # Pair with exclude_locations to strip offshore roles from global boards.
+  # ---------------------------------------------------------------------------
+
+  # -- AU AI / ML platforms --
+
+  - name: Culture Amp
+    careers_url: https://job-boards.greenhouse.io/cultureamp
+    api: https://boards-api.greenhouse.io/v1/boards/cultureamp/jobs
+    notes: "Melbourne/Sydney AU. Employee experience platform. Active AI Engineer hiring (LangGraph, RAG, eval). Greenhouse verified."
+    enabled: true
+
+  - name: SafetyCulture
+    careers_url: https://jobs.lever.co/safetyculture-2
+    notes: "Sydney AU. Workplace safety SaaS. Lever board verified, AU mid-level roles."
+    enabled: true
+
+  - name: Canva
+    careers_url: https://job-boards.greenhouse.io/canva
+    api: https://boards-api.greenhouse.io/v1/boards/canva/jobs
+    notes: "Sydney AU. Design platform unicorn. Large engineering org, strong AI/ML team. Greenhouse verified."
+    enabled: true
+
+  - name: Atlassian
+    careers_url: https://job-boards.greenhouse.io/atlassian
+    api: https://boards-api.greenhouse.io/v1/boards/atlassian/jobs
+    notes: "Sydney AU. Jira/Confluence/Rovo. Large AU engineering presence. Greenhouse verified."
+    enabled: true
+
+  # -- AU fintech / lending --
+
+  - name: Plenti
+    careers_url: https://jobs.lever.co/plenti
+    notes: "Sydney AU. Green lending fintech. AI-driven credit scoring. Lever board verified."
+    enabled: true
+
+  - name: Airwallex
+    careers_url: https://jobs.ashbyhq.com/airwallex
+    notes: "Sydney AU HQ. Cross-border payments. Large Ashby board (~600 total jobs). Use exclude_locations to filter AU only."
+    enabled: true
+
+  - name: Afterpay / Block
+    careers_url: https://job-boards.greenhouse.io/block
+    api: https://boards-api.greenhouse.io/v1/boards/block/jobs
+    notes: "Sydney AU. BNPL / fintech. Block (Square) AU engineering hub. Greenhouse verified."
+    enabled: true
+
+  # -- AU SaaS & platforms --
+
+  - name: Atlassian Ventures / Loom
+    careers_url: https://job-boards.greenhouse.io/loom
+    api: https://boards-api.greenhouse.io/v1/boards/loom/jobs
+    notes: "Atlassian-acquired. Video messaging. Some AU roles."
+    enabled: true
+
+  - name: Deputy
+    careers_url: https://jobs.lever.co/deputy
+    notes: "Sydney AU. Workforce management SaaS. Lever board verified, mid-level AU roles."
+    enabled: true
+
+  - name: Secure Code Warrior
+    careers_url: https://jobs.lever.co/securecodewarrior
+    notes: "Sydney AU. Developer security training platform. Lever board verified."
+    enabled: true
+
+  - name: Prospa
+    careers_url: https://job-boards.greenhouse.io/prospa
+    api: https://boards-api.greenhouse.io/v1/boards/prospa/jobs
+    notes: "Sydney AU. Small business lending fintech. Greenhouse verified."
+    enabled: true
+
+  - name: Employment Hero
+    careers_url: https://job-boards.greenhouse.io/employmenthero
+    api: https://boards-api.greenhouse.io/v1/boards/employmenthero/jobs
+    notes: "Sydney AU. HR/payroll SaaS unicorn. Active engineering hiring. Greenhouse verified."
+    enabled: true
+
+  - name: Immutable
+    careers_url: https://job-boards.greenhouse.io/immutable
+    api: https://boards-api.greenhouse.io/v1/boards/immutable/jobs
+    notes: "Sydney AU. Web3 gaming + blockchain. Greenhouse verified. Filter with negative keywords if not interested in Web3."
+    enabled: true
+
+  - name: Aconex / Oracle Construction
+    careers_url: https://job-boards.greenhouse.io/aconex
+    api: https://boards-api.greenhouse.io/v1/boards/aconex/jobs
+    notes: "Melbourne AU. Construction project management (Oracle). Greenhouse verified."
+    enabled: false
+
+  # -- AU cloud / infra --
+
+  - name: Telstra
+    careers_url: https://telstra.wd3.myworkdayjobs.com/Telstra_Careers
+    api_provider: workday
+    workday_tenant: telstra
+    workday_instance: wd3
+    workday_board: Telstra_Careers
+    notes: "Sydney/Melbourne AU. National telco, large cloud/platform engineering org. Workday ATS."
+    enabled: true
+
+  - name: Commonwealth Bank (CBA)
+    careers_url: https://cba.wd3.myworkdayjobs.com/CommBank
+    api_provider: workday
+    workday_tenant: cba
+    workday_instance: wd3
+    workday_board: CommBank
+    notes: "Sydney AU. Largest AU bank. Strong data/ML/AI engineering org. Workday ATS."
+    enabled: true
+
+  - name: REA Group
+    careers_url: https://job-boards.greenhouse.io/rea
+    api: https://boards-api.greenhouse.io/v1/boards/rea/jobs
+    notes: "Melbourne AU. Property marketplace (realestate.com.au). Strong data/ML team. Greenhouse verified."
+    enabled: true
+
+  - name: Seek
+    careers_url: https://job-boards.greenhouse.io/seek
+    api: https://boards-api.greenhouse.io/v1/boards/seek/jobs
+    notes: "Melbourne AU. Jobs marketplace. Active ML/AI platform team. Greenhouse verified."
+    enabled: true
+
+  # -- AU search queries (pair with tracked_companies above) --
+  # Add these to search_queries if you want broader AU discovery beyond tracked companies.
+  # (Search queries are defined above in the search_queries section;
+  #  these are provided as reference entries you can copy up there.)
+  #
+  # - name: AU Greenhouse — AI Engineer Sydney/Melbourne
+  #   query: 'site:job-boards.greenhouse.io "AI Engineer" OR "ML Engineer" OR "LLM" Sydney OR Melbourne Australia'
+  #   enabled: true
+  #
+  # - name: AU Lever — Software Engineer Sydney/Melbourne
+  #   query: 'site:jobs.lever.co "Software Engineer" OR "AI Engineer" Sydney OR Melbourne Australia'
+  #   enabled: true
+  #
+  # - name: AU Seek — AI/ML roles
+  #   query: 'site:seek.com.au "AI Engineer" OR "Machine Learning Engineer" OR "LLM" Sydney OR Melbourne'
+  #   enabled: true
