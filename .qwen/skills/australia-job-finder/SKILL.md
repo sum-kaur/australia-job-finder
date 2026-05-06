@@ -1,0 +1,1 @@
+﻿../../../.agents/skills/australia-job-finder/SKILL.md

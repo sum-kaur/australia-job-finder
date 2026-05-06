@@ -11,7 +11,7 @@
  * 6. No pending TSVs in tracker-additions/ (only in merged/ or archived/)
  * 7. states.yml canonical IDs for cross-system consistency
  *
- * Run: node career-ops/verify-pipeline.mjs
+ * Run: node verify-pipeline.mjs
  */
 
 import { readFileSync, readdirSync, existsSync, mkdirSync } from 'fs';

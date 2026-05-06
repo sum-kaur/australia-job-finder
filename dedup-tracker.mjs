@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+﻿#!/usr/bin/env node
 /**
  * dedup-tracker.mjs — Remove duplicate entries from applications.md
  *
@@ -6,7 +6,7 @@
  * Keeps entry with highest score. If discarded entry had more advanced status,
  * preserves that status. Merges notes.
  *
- * Run: node career-ops/dedup-tracker.mjs [--dry-run]
+ * Run: node dedup-tracker.mjs [--dry-run]
  */
 
 import { readFileSync, writeFileSync, copyFileSync, existsSync, mkdirSync } from 'fs';

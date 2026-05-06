@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+﻿#!/usr/bin/env node
 /**
  * export-tracker.mjs
  * Converts data/applications.md → output/tracker.csv
@@ -16,7 +16,7 @@ const OUTPUT_DIR = path.join(__dirname, 'output');
 const OUTPUT = path.join(OUTPUT_DIR, 'tracker.csv');
 
 if (!fs.existsSync(TRACKER)) {
-  console.error('No tracker found at data/applications.md — run /career-ops scan first.');
+  console.error('No tracker found at data/applications.md — run /australia-job-finder scan first.');
   process.exit(1);
 }
 

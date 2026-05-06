@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+﻿#!/usr/bin/env node
 /**
  * normalize-statuses.mjs — Clean non-canonical states in applications.md
  *
@@ -8,7 +8,7 @@
  * Also strips markdown bold (**) and dates from the status field,
  * moving DUPLICADO info to the notes column.
  *
- * Run: node career-ops/normalize-statuses.mjs [--dry-run]
+ * Run: node normalize-statuses.mjs [--dry-run]
  */
 
 import { readFileSync, writeFileSync, copyFileSync, existsSync, mkdirSync } from 'fs';

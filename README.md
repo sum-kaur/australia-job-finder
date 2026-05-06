@@ -1,4 +1,4 @@
-# Australia-Job-Finder
+﻿# Australia-Job-Finder
 
 > AI-powered job search pipeline built specifically for the Australian tech market.
 
@@ -120,7 +120,7 @@ The system onboards itself — reads your CV and asks a few questions to calibra
 ### 5. Scan for AU jobs
 
 ```
-/career-ops scan
+/australia-job-finder scan
 ```
 
 Scans 30+ AU companies and drops new roles into `data/pipeline.md`. Takes ~60 seconds.
@@ -130,11 +130,11 @@ Scans 30+ AU companies and drops new roles into `data/pipeline.md`. Takes ~60 se
 ## Daily workflow
 
 ```
-/career-ops scan        → Find new AU roles (Greenhouse, Lever, Ashby, Workday)
-/career-ops pipeline    → Batch-evaluate all pending URLs
-/career-ops pdf         → Generate tailored PDF CV for a specific job
-/career-ops apply       → Fill application form in browser
-/career-ops tracker     → View pipeline status
+/australia-job-finder scan        → Find new AU roles (Greenhouse, Lever, Ashby, Workday)
+/australia-job-finder pipeline    → Batch-evaluate all pending URLs
+/australia-job-finder pdf         → Generate tailored PDF CV for a specific job
+/australia-job-finder apply       → Fill application form in browser
+/australia-job-finder tracker     → View pipeline status
 ```
 
 Or paste any job URL directly — auto-detects and runs the full pipeline.
