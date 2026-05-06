@@ -1373,7 +1373,6 @@ tracked_companies:
     workday_tenant: nab
     workday_instance: wd3
     workday_board: Careers
-    au_company: true
     notes: "Melbourne AU. Major bank. Strong data/AI/platform engineering org. Workday ATS."
     enabled: true
 
@@ -1384,7 +1383,6 @@ tracked_companies:
     workday_tenant: anz
     workday_instance: wd3
     workday_board: ANZCareers
-    au_company: true
     notes: "Melbourne AU. Major bank. Large technology division. Workday ATS."
     enabled: true
 
@@ -1395,7 +1393,6 @@ tracked_companies:
     workday_tenant: westpac
     workday_instance: wd3
     workday_board: WestpacCareers
-    au_company: true
     notes: "Sydney AU. Major bank. Tech transformation underway; data/AI roles. Workday ATS."
     enabled: true
 
@@ -1406,7 +1403,6 @@ tracked_companies:
     workday_tenant: macquarie
     workday_instance: wd3
     workday_board: MacquarieCareers
-    au_company: true
     notes: "Sydney AU. Investment bank and asset manager. Strong quant/ML/platform teams. Workday ATS."
     enabled: true
 
