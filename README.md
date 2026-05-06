@@ -18,6 +18,8 @@ Paste a job URL. It scores fit against your CV, generates a tailored PDF, fills 
 
 Built by an AI Engineer based in Sydney who got tired of manually filtering hundreds of global job boards for AU-relevant roles.
 
+Inspired by [career-ops](https://github.com/santifer/career-ops) — a job search automation tool originally built for the US/EU market. This project extends that foundation specifically for the Australian tech market: AU company ATS configurations, AU job board queries, location filtering to strip offshore roles, and AU salary benchmarks.
+
 > **Not spray-and-pray.** The system scores every role 0–5 and recommends skipping anything below 4.0. Quality applications only.
 
 ---
