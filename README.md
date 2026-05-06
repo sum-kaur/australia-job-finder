@@ -247,5 +247,3 @@ PRs welcome. If you verify a new AU company ATS slug that works reliably, open a
 ## License
 
 MIT — see [LICENSE](LICENSE).
-
-Built by [Sumneet Kaur](https://github.com/sum-kaur) · [linkedin.com/in/sumneet-kaur](https://linkedin.com/in/sumneet-kaur)

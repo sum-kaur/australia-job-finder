@@ -25,8 +25,8 @@
     "career",
     "automation"
   ],
-  "author": "Santiago Fernández de Valderrama <hi@sumneet.com> (https://sumneet.com)",
-  "homepage": "https://sumneet.com",
+  "author": "australia-job-finder contributors",
+  "homepage": "https://github.com/sum-kaur/australia-job-finder",
   "repository": {
     "type": "git",
     "url": "https://github.com/sum-kaur/australia-job-finder"
