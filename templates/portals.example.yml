@@ -133,6 +133,63 @@ title_filter:
 # The scanner extracts title, URL, and company from results.
 
 search_queries:
+
+  # ---------------------------------------------------------------------------
+  # -- Australia-specific job boards (highest signal for AU candidates) --
+  # ---------------------------------------------------------------------------
+
+  - name: Seek AU — AI Engineer
+    query: 'site:seek.com.au "AI Engineer" OR "Machine Learning Engineer" OR "LLM Engineer" Sydney OR Melbourne OR Brisbane OR Remote'
+    enabled: true
+
+  - name: Seek AU — Platform & Cloud Engineer
+    query: 'site:seek.com.au "Platform Engineer" OR "Cloud Engineer" OR "DevOps" Sydney OR Melbourne'
+    enabled: true
+
+  - name: Seek AU — Data Scientist / ML
+    query: 'site:seek.com.au "Data Scientist" OR "ML Engineer" OR "AI" Sydney OR Melbourne OR Remote Australia'
+    enabled: true
+
+  - name: LinkedIn AU — AI Engineer
+    query: 'site:linkedin.com/jobs "AI Engineer" OR "Machine Learning Engineer" Australia Sydney OR Melbourne'
+    enabled: true
+
+  - name: LinkedIn AU — Software Engineer mid-level
+    query: 'site:linkedin.com/jobs "Software Engineer" AI OR Python OR "Machine Learning" Australia -Senior -Lead -Principal -Staff'
+    enabled: true
+
+  - name: Indeed AU — AI / ML roles
+    query: 'site:au.indeed.com "AI Engineer" OR "Machine Learning" OR "LLM" Sydney OR Melbourne OR Remote'
+    enabled: true
+
+  - name: Ethical Jobs AU — Tech roles
+    query: 'site:ethicaljobs.com.au "Engineer" OR "Developer" OR "Data" OR "AI" Sydney OR Melbourne OR Remote'
+    enabled: true
+
+  - name: Jora AU — AI / Tech
+    query: 'site:au.jora.com "AI Engineer" OR "Machine Learning" OR "Platform Engineer" Sydney OR Melbourne'
+    enabled: true
+
+  - name: YC Startup Jobs — AU hiring
+    query: 'site:workatastartup.com "AI Engineer" OR "Software Engineer" OR "ML" Australia OR Sydney OR Melbourne'
+    enabled: true
+
+  - name: Wellfound — AU Tech Startups
+    query: 'site:wellfound.com/jobs "AI" OR "Machine Learning" OR "Platform" Australia Sydney OR Melbourne'
+    enabled: true
+
+  - name: Greenhouse AU — AI & Platform roles
+    query: 'site:job-boards.greenhouse.io "AI Engineer" OR "Platform Engineer" OR "ML Engineer" Sydney OR Melbourne OR Australia'
+    enabled: true
+
+  - name: Lever AU — Software Engineer / AI
+    query: 'site:jobs.lever.co "Software Engineer" OR "AI Engineer" Sydney OR Melbourne OR Australia'
+    enabled: true
+
+  # ---------------------------------------------------------------------------
+  # -- Global boards (remote-friendly, AU timezone compatible) --
+  # ---------------------------------------------------------------------------
+
   # -- Ashby --
   - name: Ashby — AI PM
     query: 'site:jobs.ashbyhq.com "AI Product Manager" OR "Senior Product Manager AI" remote'
@@ -1094,19 +1151,87 @@ tracked_companies:
     notes: "Melbourne AU. Jobs marketplace. Active ML/AI platform team. Greenhouse verified."
     enabled: true
 
-  # -- AU search queries (pair with tracked_companies above) --
-  # Add these to search_queries if you want broader AU discovery beyond tracked companies.
-  # (Search queries are defined above in the search_queries section;
-  #  these are provided as reference entries you can copy up there.)
-  #
-  # - name: AU Greenhouse — AI Engineer Sydney/Melbourne
-  #   query: 'site:job-boards.greenhouse.io "AI Engineer" OR "ML Engineer" OR "LLM" Sydney OR Melbourne Australia'
-  #   enabled: true
-  #
-  # - name: AU Lever — Software Engineer Sydney/Melbourne
-  #   query: 'site:jobs.lever.co "Software Engineer" OR "AI Engineer" Sydney OR Melbourne Australia'
-  #   enabled: true
-  #
-  # - name: AU Seek — AI/ML roles
-  #   query: 'site:seek.com.au "AI Engineer" OR "Machine Learning Engineer" OR "LLM" Sydney OR Melbourne'
-  #   enabled: true
+  # -- AU media, gov & health tech --
+
+  - name: ABC (Australian Broadcasting Corporation)
+    careers_url: https://www.abc.net.au/careers
+    scan_method: websearch
+    scan_query: 'site:abc.net.au/careers "Engineer" OR "Developer" OR "Data" OR "Technology"'
+    notes: "Sydney/Melbourne AU. National broadcaster. Digital/tech roles on careers page."
+    enabled: false
+
+  - name: Healthscope / Medibank
+    careers_url: https://job-boards.greenhouse.io/medibank
+    api: https://boards-api.greenhouse.io/v1/boards/medibank/jobs
+    notes: "Melbourne AU. Health insurance + digital health. AI/data roles. Greenhouse verified."
+    enabled: true
+
+  - name: Dovetail
+    careers_url: https://jobs.ashbyhq.com/dovetail
+    notes: "Sydney AU. User research platform. AI-powered insights. Ashby board verified."
+    enabled: true
+
+  - name: Octopus Deploy
+    careers_url: https://jobs.lever.co/octopus
+    notes: "Brisbane AU. DevOps automation platform. Remote-friendly. Lever board verified."
+    enabled: true
+
+  - name: Clipchamp (Microsoft)
+    careers_url: https://job-boards.greenhouse.io/clipchamp
+    api: https://boards-api.greenhouse.io/v1/boards/clipchamp/jobs
+    notes: "Brisbane AU. AI video editor acquired by Microsoft. Greenhouse verified."
+    enabled: false
+
+  - name: Buildkite
+    careers_url: https://jobs.lever.co/buildkite
+    notes: "Melbourne AU (remote-first). CI/CD platform. Engineering + platform roles. Lever verified."
+    enabled: true
+
+  - name: Vend / Lightspeed
+    careers_url: https://job-boards.greenhouse.io/lightspeedcommerce
+    api: https://boards-api.greenhouse.io/v1/boards/lightspeedcommerce/jobs
+    notes: "AU offices (Auckland NZ origin). Retail POS + AI. Greenhouse verified."
+    enabled: true
+
+  - name: MYOB
+    careers_url: https://jobs.lever.co/myob
+    notes: "Melbourne AU. Accounting/ERP SaaS. Engineering and data roles. Lever verified."
+    enabled: true
+
+  - name: hipages
+    careers_url: https://jobs.lever.co/hipages
+    notes: "Sydney AU. Home services marketplace. Platform and ML roles. Lever board - verify before scan."
+    enabled: false
+
+  - name: Zip Co
+    careers_url: https://job-boards.greenhouse.io/zipco
+    api: https://boards-api.greenhouse.io/v1/boards/zipco/jobs
+    notes: "Sydney AU. BNPL fintech. Platform/data engineering. Greenhouse verified."
+    enabled: true
+
+  - name: Siteminder
+    careers_url: https://jobs.lever.co/siteminder
+    notes: "Sydney AU. Hotel distribution SaaS. Engineering roles. Lever board - AU filter required."
+    enabled: true
+
+  - name: Linktree
+    careers_url: https://jobs.lever.co/linktree
+    notes: "Melbourne AU. Link-in-bio platform. Engineering/data roles. Lever board verified."
+    enabled: true
+
+  - name: Brighte
+    careers_url: https://jobs.lever.co/brighte
+    notes: "Sydney AU. Green energy fintech. Data/platform engineering. Lever board verified."
+    enabled: true
+
+  - name: Xero
+    careers_url: https://job-boards.greenhouse.io/xero
+    api: https://boards-api.greenhouse.io/v1/boards/xero/jobs
+    notes: "AU/NZ. Accounting SaaS. Large engineering org, ML and platform roles. Greenhouse verified."
+    enabled: true
+
+  - name: Airtasker
+    careers_url: https://jobs.lever.co/airtasker
+    notes: "Sydney AU. Services marketplace. Engineering roles. Lever board - verify before scan."
+    enabled: false
+

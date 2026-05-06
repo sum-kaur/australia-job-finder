@@ -62,8 +62,8 @@ That's it. No hosted service, no API keys beyond your chosen AI CLI.
 ### 1. Clone and install
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/career-ops.git
-cd career-ops
+git clone https://github.com/sum-kaur/australia-job-finder.git
+cd australia-job-finder
 npm install
 npx playwright install chromium
 ```
