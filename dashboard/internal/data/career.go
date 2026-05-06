@@ -1,4 +1,4 @@
-package data
+﻿package data
 
 import (
 	"fmt"
@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/santifer/career-ops/dashboard/internal/model"
+	"github.com/sum-kaur/australia-job-finder/dashboard/internal/model"
 )
 
 var (

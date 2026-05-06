@@ -1,4 +1,4 @@
-package main
+﻿package main
 
 import (
 	"flag"
@@ -9,10 +9,10 @@ import (
 
 	tea "github.com/charmbracelet/bubbletea"
 
-	"github.com/santifer/career-ops/dashboard/internal/data"
-	"github.com/santifer/career-ops/dashboard/internal/model"
-	"github.com/santifer/career-ops/dashboard/internal/theme"
-	"github.com/santifer/career-ops/dashboard/internal/ui/screens"
+	"github.com/sum-kaur/australia-job-finder/dashboard/internal/data"
+	"github.com/sum-kaur/australia-job-finder/dashboard/internal/model"
+	"github.com/sum-kaur/australia-job-finder/dashboard/internal/theme"
+	"github.com/sum-kaur/australia-job-finder/dashboard/internal/ui/screens"
 )
 
 type viewState int
@@ -152,7 +152,7 @@ func (m appModel) View() string {
 }
 
 func main() {
-	pathFlag := flag.String("path", ".", "Path to career-ops directory")
+	pathFlag := flag.String("path", ".", "Path to australia-job-finder directory")
 	flag.Parse()
 
 	careerOpsPath := *pathFlag

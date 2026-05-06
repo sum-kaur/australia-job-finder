@@ -1,10 +1,10 @@
-{
-  "name": "career-ops",
+﻿{
+  "name": "australia-job-finder",
   "version": "1.6.0",
   "description": "AI job search command center — evaluate offers, generate CVs, scan portals, track applications",
   "author": {
-    "name": "santifer",
-    "url": "https://santifer.io"
+    "name": "sum-kaur",
+    "url": "https://sumneet.com"
   },
   "skills": [".claude/skills/"],
   "permissions": {

@@ -1,4 +1,4 @@
-# Career-Ops
+﻿# Australia-Job-Finder
 
 [English](README.md) | [Español](README.es.md) | [Português (Brasil)](README.pt-BR.md) | [한국어](README.ko-KR.md) | [日本語](README.ja.md) | [Русский](README.ru.md) | [简体中文](README.cn.md) | [繁體中文](README.zh-TW.md)
 
@@ -17,7 +17,7 @@
 
 ## Что это
 
-Career-Ops превращает любой AI-CLI в полноценный командный центр для поиска работы. Вместо ручного ведения таблиц с откликами вы получаете ИИ-пайплайн, который:
+Australia-Job-Finder превращает любой AI-CLI в полноценный командный центр для поиска работы. Вместо ручного ведения таблиц с откликами вы получаете ИИ-пайплайн, который:
 
 - **Оценивает вакансии** по структурированной системе A–F (10 взвешенных параметров)
 - **Генерирует персонализированные PDF-резюме** — оптимизированные под ATS, адаптированные под каждую вакансию
@@ -46,8 +46,8 @@ Career-Ops превращает любой AI-CLI в полноценный ко
 
 ```bash
 # 1. Клонируй и установи
-git clone https://github.com/santifer/career-ops.git
-cd career-ops && npm install
+git clone https://github.com/sum-kaur/australia-job-finder.git
+cd australia-job-finder && npm install
 npx playwright install chromium   # Для генерации PDF
 
 # 2. Проверь настройки
@@ -70,7 +70,7 @@ claude   # Открой Claude Code в директории проекта
 # "Обнови мой профиль из этого CV"
 
 # 6. Начинай
-# Вставь URL вакансии или запусти /career-ops
+# Вставь URL вакансии или запусти /australia-job-finder
 ```
 
 ## Использование
@@ -78,21 +78,21 @@ claude   # Открой Claude Code в директории проекта
 Career-ops — одна slash-команда с множеством режимов:
 
 ```
-/career-ops                       → Показать все доступные команды
-/career-ops {вставь описание JD}  → Полный авто-пайплайн (оценка + PDF + трекер)
-/career-ops scan                  → Сканирование порталов
-/career-ops pdf                   → Генерация ATS-резюме
-/career-ops batch                 → Пакетная оценка вакансий
-/career-ops tracker               → Статус откликов
-/career-ops apply                 → Заполнение форм отклика с ИИ
-/career-ops pipeline              → Обработка очереди URL
-/career-ops contacto              → Сообщение в LinkedIn
-/career-ops deep                  → Глубокий анализ компании
-/career-ops training              → Оценка курса/сертификации
-/career-ops project               → Оценка портфолио-проекта
+/australia-job-finder                       → Показать все доступные команды
+/australia-job-finder {вставь описание JD}  → Полный авто-пайплайн (оценка + PDF + трекер)
+/australia-job-finder scan                  → Сканирование порталов
+/australia-job-finder pdf                   → Генерация ATS-резюме
+/australia-job-finder batch                 → Пакетная оценка вакансий
+/australia-job-finder tracker               → Статус откликов
+/australia-job-finder apply                 → Заполнение форм отклика с ИИ
+/australia-job-finder pipeline              → Обработка очереди URL
+/australia-job-finder contacto              → Сообщение в LinkedIn
+/australia-job-finder deep                  → Глубокий анализ компании
+/australia-job-finder training              → Оценка курса/сертификации
+/australia-job-finder project               → Оценка портфолио-проекта
 ```
 
-Или просто вставь URL вакансии — career-ops автоматически определит его и запустит полный пайплайн.
+Или просто вставь URL вакансии — australia-job-finder автоматически определит его и запустит полный пайплайн.
 
 ## Как это работает
 
@@ -205,7 +205,7 @@ career-ops/
 
 ## Дисклеймер
 
-**career-ops — локальный open-source инструмент, НЕ хостинг-сервис.** Используя это ПО, вы подтверждаете:
+**australia-job-finder — локальный open-source инструмент, НЕ хостинг-сервис.** Используя это ПО, вы подтверждаете:
 
 1. **Вы контролируете свои данные.** CV, контакты и персональные данные остаются на вашей машине и отправляются напрямую выбранному AI-провайдеру (Anthropic, OpenAI и др.). Мы не собираем и не храним ваши данные.
 2. **Вы контролируете ИИ.** Промты по умолчанию запрещают ИИ автоматически отправлять отклики, но модели могут вести себя непредсказуемо. Модификация промтов — на ваш риск. **Всегда проверяйте сгенерированный контент перед отправкой.**

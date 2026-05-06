@@ -1,4 +1,4 @@
-# Setup Guide
+﻿# Setup Guide
 
 ## Prerequisites
 
@@ -11,8 +11,8 @@
 ### 1. Clone and install
 
 ```bash
-git clone https://github.com/santifer/career-ops.git
-cd career-ops
+git clone https://github.com/sum-kaur/australia-job-finder.git
+cd australia-job-finder
 npm install
 npx playwright install chromium   # Required for PDF generation
 ```
@@ -57,12 +57,12 @@ Then paste a job offer URL or description. Career-ops will automatically evaluat
 | Action | How |
 |--------|-----|
 | Evaluate an offer | Paste a URL or JD text |
-| Search for offers | `/career-ops scan` |
-| Process pending URLs | `/career-ops pipeline` |
-| Generate a PDF | `/career-ops pdf` |
-| Batch evaluate | `/career-ops batch` |
-| Check tracker status | `/career-ops tracker` |
-| Fill application form | `/career-ops apply` |
+| Search for offers | `/australia-job-finder scan` |
+| Process pending URLs | `/australia-job-finder pipeline` |
+| Generate a PDF | `/australia-job-finder pdf` |
+| Batch evaluate | `/australia-job-finder batch` |
+| Check tracker status | `/australia-job-finder tracker` |
+| Fill application form | `/australia-job-finder apply` |
 
 ## Verify Setup
 

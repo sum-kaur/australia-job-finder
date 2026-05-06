@@ -1,16 +1,16 @@
-# Getting Help
+﻿# Getting Help
 
-career-ops is an open source project maintained in limited time. Here's how to get help efficiently.
+australia-job-finder is an open source project maintained in limited time. Here's how to get help efficiently.
 
 ## Where to ask
 
 | Question type | Where |
 |---|---|
-| **Bug** (something is broken) | [GitHub Issues](https://github.com/santifer/career-ops/issues) — use the Bug Report template |
-| **Feature idea** | [GitHub Issues](https://github.com/santifer/career-ops/issues) — use the Feature Request template |
-| **How do I...?** | [GitHub Discussions](https://github.com/santifer/career-ops/discussions) or [Discord](https://discord.gg/8pRpHETxa4) |
+| **Bug** (something is broken) | [GitHub Issues](https://github.com/sum-kaur/australia-job-finder/issues) — use the Bug Report template |
+| **Feature idea** | [GitHub Issues](https://github.com/sum-kaur/australia-job-finder/issues) — use the Feature Request template |
+| **How do I...?** | [GitHub Discussions](https://github.com/sum-kaur/australia-job-finder/discussions) or [Discord](https://discord.gg/8pRpHETxa4) |
 | **Setup help** | Check [docs/SETUP.md](docs/SETUP.md) first, then ask in [Discord](https://discord.gg/8pRpHETxa4) |
-| **Security vulnerability** | Email hi@santifer.io — see [SECURITY.md](SECURITY.md) |
+| **Security vulnerability** | Email hi@sumneet.com — see [SECURITY.md](SECURITY.md) |
 
 ## Before opening an issue
 

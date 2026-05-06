@@ -1,10 +1,10 @@
-# Career-Ops — AI Job Search Pipeline (Gemini CLI)
+﻿# Australia-Job-Finder — AI Job Search for Australian Tech (Gemini CLI)
 
 > This file is auto-loaded by the Gemini CLI as persistent context.
 > It is the Gemini equivalent of CLAUDE.md.
 > All slash commands are defined in `.gemini/commands/`.
 
-## What is career-ops
+## What is australia-job-finder
 
 AI-powered job search automation: pipeline tracking, offer evaluation, CV generation, portal scanning, batch processing. Originally built on Claude Code, now fully supported on Gemini CLI and OpenCode.
 
@@ -39,21 +39,21 @@ When using [Gemini CLI](https://github.com/google-gemini/gemini-cli), the follow
 
 | Command | Claude Code Equivalent | Description |
 |---------|------------------------|-------------|
-| `/career-ops` | `/career-ops` | Show menu or evaluate JD |
-| `/career-ops-pipeline` | `/career-ops pipeline` | Process pending URLs from inbox |
-| `/career-ops-evaluate` | `/career-ops oferta` | Evaluate job offer (A-G scoring) |
-| `/career-ops-compare` | `/career-ops ofertas` | Compare and rank multiple offers |
-| `/career-ops-contact` | `/career-ops contacto` | LinkedIn outreach |
-| `/career-ops-deep` | `/career-ops deep` | Deep company research |
-| `/career-ops-pdf` | `/career-ops pdf` | Generate ATS-optimized CV |
-| `/career-ops-training` | `/career-ops training` | Evaluate course/cert |
-| `/career-ops-project` | `/career-ops project` | Evaluate portfolio project |
-| `/career-ops-tracker` | `/career-ops tracker` | Application status overview |
-| `/career-ops-apply` | `/career-ops apply` | Live application assistant |
-| `/career-ops-scan` | `/career-ops scan` | Scan portals for new offers |
-| `/career-ops-batch` | `/career-ops batch` | Batch processing |
-| `/career-ops-patterns` | `/career-ops patterns` | Analyze rejection patterns |
-| `/career-ops-followup` | `/career-ops followup` | Follow-up cadence tracker |
+| `/australia-job-finder` | `/australia-job-finder` | Show menu or evaluate JD |
+| `/australia-job-finder-pipeline` | `/australia-job-finder pipeline` | Process pending URLs from inbox |
+| `/australia-job-finder-evaluate` | `/australia-job-finder oferta` | Evaluate job offer (A-G scoring) |
+| `/australia-job-finder-compare` | `/australia-job-finder ofertas` | Compare and rank multiple offers |
+| `/australia-job-finder-contact` | `/australia-job-finder contacto` | LinkedIn outreach |
+| `/australia-job-finder-deep` | `/australia-job-finder deep` | Deep company research |
+| `/australia-job-finder-pdf` | `/australia-job-finder pdf` | Generate ATS-optimized CV |
+| `/australia-job-finder-training` | `/australia-job-finder training` | Evaluate course/cert |
+| `/australia-job-finder-project` | `/australia-job-finder project` | Evaluate portfolio project |
+| `/australia-job-finder-tracker` | `/australia-job-finder tracker` | Application status overview |
+| `/australia-job-finder-apply` | `/australia-job-finder apply` | Live application assistant |
+| `/australia-job-finder-scan` | `/australia-job-finder scan` | Scan portals for new offers |
+| `/australia-job-finder-batch` | `/australia-job-finder batch` | Batch processing |
+| `/australia-job-finder-patterns` | `/australia-job-finder patterns` | Analyze rejection patterns |
+| `/australia-job-finder-followup` | `/australia-job-finder followup` | Follow-up cadence tracker |
 
 **All commands share the same evaluation logic** in `modes/*.md`. The `modes/` files are shared between Claude Code, OpenCode, and Gemini CLI.
 

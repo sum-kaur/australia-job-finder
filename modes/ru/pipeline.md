@@ -1,6 +1,6 @@
-# Режим: pipeline — Очередь URL (Second Brain)
+﻿# Режим: pipeline — Очередь URL (Second Brain)
 
-Обрабатывает URL вакансий из `data/pipeline.md`. Пользователь добавляет URL когда угодно, затем запускает `/career-ops pipeline` для обработки.
+Обрабатывает URL вакансий из `data/pipeline.md`. Пользователь добавляет URL когда угодно, затем запускает `/australia-job-finder pipeline` для обработки.
 
 ## Workflow
 

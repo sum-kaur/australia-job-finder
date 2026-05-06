@@ -1,9 +1,9 @@
-# Career-Ops
+﻿# Australia-Job-Finder
 
 [English](README.md) | [Español](README.es.md) | [Português (Brasil)](README.pt-BR.md) | [한국어](README.ko-KR.md) | [日本語](README.ja.md) | [Русский](README.ru.md) | [简体中文](README.cn.md) | [繁體中文](README.zh-TW.md)
 
 <p align="center">
-  <a href="https://x.com/santifer"><img src="docs/hero-banner.jpg" alt="Career-Ops — マルチエージェント求職システム" width="800"></a>
+  <a href="https://github.com/sum-kaur"><img src="docs/hero-banner.jpg" alt="Australia-Job-Finder — マルチエージェント求職システム" width="800"></a>
 </p>
 
 <p align="center">
@@ -32,7 +32,7 @@
 ---
 
 <p align="center">
-  <img src="docs/demo.gif" alt="Career-Ops デモ" width="800">
+  <img src="docs/demo.gif" alt="Australia-Job-Finder デモ" width="800">
 </p>
 
 <p align="center"><strong>740件以上の求人を評価 · 100件以上のパーソナライズCVを生成 · 理想のポジションを獲得</strong></p>
@@ -41,7 +41,7 @@
 
 ## これは何？
 
-Career-Opsは、あらゆるAIコーディングCLIを本格的な求職コマンドセンターに変えます。スプレッドシートで応募を手動管理する代わりに、AIによる以下のパイプラインが手に入ります:
+Australia-Job-Finderは、あらゆるAIコーディングCLIを本格的な求職コマンドセンターに変えます。スプレッドシートで応募を手動管理する代わりに、AIによる以下のパイプラインが手に入ります:
 
 - **オファーを評価** -- 構造化されたA-Fスコアリングシステム（10項目の重み付け評価軸）
 - **テーラーメイドPDFを生成** -- 各求人票に合わせてATS最適化されたCV
@@ -49,13 +49,13 @@ Career-Opsは、あらゆるAIコーディングCLIを本格的な求職コマ�
 - **バッチ処理** -- サブエージェントで10件以上のオファーを並列評価
 - **すべてを一元管理** -- 整合性チェック付きの単一のデータソース
 
-> **重要: これは「とにかく数を撃つ」ツールではありません。** career-opsはフィルターです -- 何百もの求人の中から、あなたの時間を割く価値のある数件を見つけ出すためのツールです。本システムは4.0/5未満のスコアの求人への応募を強く非推奨としています。あなたの時間もリクルーターの時間も貴重です。送信前に必ず内容を確認してください。
+> **重要: これは「とにかく数を撃つ」ツールではありません。** australia-job-finderはフィルターです -- 何百もの求人の中から、あなたの時間を割く価値のある数件を見つけ出すためのツールです。本システムは4.0/5未満のスコアの求人への応募を強く非推奨としています。あなたの時間もリクルーターの時間も貴重です。送信前に必ず内容を確認してください。
 
-career-opsはエージェンティックです: Claude CodeがPlaywrightで求人ページを操作し、（キーワードマッチではなく）あなたのCVと求人票を突き合わせて適合度を推論し、求人ごとにレジュメを最適化します。
+australia-job-finderはエージェンティックです: Claude CodeがPlaywrightで求人ページを操作し、（キーワードマッチではなく）あなたのCVと求人票を突き合わせて適合度を推論し、求人ごとにレジュメを最適化します。
 
 > **ご注意: 最初の評価はあまり良くありません。** システムはまだあなたのことを知らないからです。コンテキストを与えてください -- CV、キャリアストーリー、実績の裏付け、好み、得意なこと、避けたいこと。育てれば育てるほど精度が上がります。新人リクルーターをオンボーディングするのと同じです: 最初の1週間はあなたについて学ぶ必要があり、その後かけがえのない存在になります。
 
-このシステムは、740件以上の求人を評価し、100件以上のテーラーメイドCVを生成し、Head of Applied AIのポジションを獲得した人物によって作られました。[詳細なケーススタディを読む](https://santifer.io/career-ops-system)。
+このシステムは、740件以上の求人を評価し、100件以上のテーラーメイドCVを生成し、Head of Applied AIのポジションを獲得した人物によって作られました。[詳細なケーススタディを読む](https://sumneet.com/australia-job-finder-system)。
 
 ## 機能
 
@@ -76,8 +76,8 @@ career-opsはエージェンティックです: Claude CodeがPlaywrightで求�
 
 ```bash
 # 1. クローンとインストール
-git clone https://github.com/santifer/career-ops.git
-cd career-ops && npm install
+git clone https://github.com/sum-kaur/australia-job-finder.git
+cd australia-job-finder && npm install
 npx playwright install chromium   # PDF生成に必要
 
 # 2. セットアップ確認
@@ -100,7 +100,7 @@ claude   # このディレクトリでClaude Codeを起動
 # 「貼り付けるこのCVでプロフィールを更新して」
 
 # 6. 使い始める
-# 求人URLを貼るか、/career-opsを実行
+# 求人URLを貼るか、/australia-job-finderを実行
 ```
 
 > **このシステムはClaude自身がカスタマイズする前提で設計されています。** モード、アーキタイプ、スコアリング重み、交渉スクリプト -- すべてClaudeに依頼すれば変更してくれます。Claudeは自分が使うのと同じファイルを読むので、どこを編集すればよいか正確に把握しています。
@@ -109,24 +109,24 @@ claude   # このディレクトリでClaude Codeを起動
 
 ## 使い方
 
-career-opsは複数のモードを持つ単一のスラッシュコマンドです:
+australia-job-finderは複数のモードを持つ単一のスラッシュコマンドです:
 
 ```
-/career-ops                → 利用可能なすべてのコマンドを表示
-/career-ops {求人票を貼る}  → 完全自動パイプライン（評価 + PDF + トラッカー）
-/career-ops scan           → ポータルをスキャンして新しい求人を探す
-/career-ops pdf            → ATS最適化CVを生成
-/career-ops batch          → 複数オファーをバッチ評価
-/career-ops tracker        → 応募ステータスを表示
-/career-ops apply          → AIで応募フォームを入力
-/career-ops pipeline       → 保留中のURLを処理
-/career-ops contacto       → LinkedInアウトリーチメッセージ
-/career-ops deep           → 企業の深掘りリサーチ
-/career-ops training       → コース/資格を評価
-/career-ops project        → ポートフォリオプロジェクトを評価
+/australia-job-finder                → 利用可能なすべてのコマンドを表示
+/australia-job-finder {求人票を貼る}  → 完全自動パイプライン（評価 + PDF + トラッカー）
+/australia-job-finder scan           → ポータルをスキャンして新しい求人を探す
+/australia-job-finder pdf            → ATS最適化CVを生成
+/australia-job-finder batch          → 複数オファーをバッチ評価
+/australia-job-finder tracker        → 応募ステータスを表示
+/australia-job-finder apply          → AIで応募フォームを入力
+/australia-job-finder pipeline       → 保留中のURLを処理
+/australia-job-finder contacto       → LinkedInアウトリーチメッセージ
+/australia-job-finder deep           → 企業の深掘りリサーチ
+/australia-job-finder training       → コース/資格を評価
+/australia-job-finder project        → ポートフォリオプロジェクトを評価
 ```
 
-または、単に求人URLや記述を直接貼り付けるだけ -- career-opsが自動検知してフルパイプラインを実行します。
+または、単に求人URLや記述を直接貼り付けるだけ -- australia-job-finderが自動検知してフルパイプラインを実行します。
 
 ## 仕組み
 
@@ -225,27 +225,27 @@ career-ops/
 
 ## 同じくオープンソース
 
-- **[cv-santiago](https://github.com/santifer/cv-santiago)** -- AIチャットボット、LLMOpsダッシュボード、ケーススタディ付きのポートフォリオサイト（santifer.io）。求職活動と並行して提示するポートフォリオが必要なら、フォークして自分のものにしてください。
+- **[cv-santiago](https://github.com/sum-kaur/cv-santiago)** -- AIチャットボット、LLMOpsダッシュボード、ケーススタディ付きのポートフォリオサイト（sumneet.com）。求職活動と並行して提示するポートフォリオが必要なら、フォークして自分のものにしてください。
 
 ## 作者について
 
-Santiagoです -- Head of Applied AI、元創業者（自分の名前を冠した事業を立ち上げて売却、その事業は今も稼働中）。career-opsは自分自身の求職活動を管理するために作りました。結果、現職を獲得することに成功しました。
+Santiagoです -- Head of Applied AI、元創業者（自分の名前を冠した事業を立ち上げて売却、その事業は今も稼働中）。australia-job-finderは自分自身の求職活動を管理するために作りました。結果、現職を獲得することに成功しました。
 
-ポートフォリオと他のオープンソースプロジェクト → [santifer.io](https://santifer.io)
+ポートフォリオと他のオープンソースプロジェクト → [sumneet.com](https://sumneet.com)
 
 ## Star History
 
-<a href="https://www.star-history.com/?repos=santifer%2Fcareer-ops&type=timeline&legend=top-left">
+<a href="https://www.star-history.com/?repos=sum-kaur%2Faustralia-job-finder&type=timeline&legend=top-left">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=santifer/career-ops&type=timeline&theme=dark&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=santifer/career-ops&type=timeline&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=santifer/career-ops&type=timeline&legend=top-left" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=sum-kaur/australia-job-finder&type=timeline&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=sum-kaur/australia-job-finder&type=timeline&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=sum-kaur/australia-job-finder&type=timeline&legend=top-left" />
  </picture>
 </a>
 
 ## 免責事項
 
-**career-opsはローカルで動作するオープンソースツールです — ホステッドサービスではありません。** 本ソフトウェアを使用することにより、以下を承諾したものとみなされます:
+**australia-job-finderはローカルで動作するオープンソースツールです — ホステッドサービスではありません。** 本ソフトウェアを使用することにより、以下を承諾したものとみなされます:
 
 1. **データはあなたが管理します。** CV、連絡先、個人情報はあなたのマシン上にとどまり、あなたが選択したAIプロバイダー（Anthropic、OpenAIなど）に直接送信されます。当方はあなたのデータを収集、保存、アクセスすることは一切ありません。
 2. **AIはあなたが管理します。** デフォルトのプロンプトはAIに応募の自動送信を行わないよう指示していますが、AIモデルは予測できない挙動をする場合があります。プロンプトを変更したり、別のモデルを使用する場合は自己責任でお願いします。**送信前に必ずAI生成コンテンツの正確性を確認してください。**
@@ -260,7 +260,7 @@ MIT
 
 ## つながりましょう
 
-[![Website](https://img.shields.io/badge/santifer.io-000?style=for-the-badge&logo=safari&logoColor=white)](https://santifer.io)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/santifer)
-[![X](https://img.shields.io/badge/X-000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/santifer)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hi@santifer.io)
+[![Website](https://img.shields.io/badge/sumneet.com-000?style=for-the-badge&logo=safari&logoColor=white)](https://sumneet.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/sumneet-kaur)
+[![X](https://img.shields.io/badge/X-000?style=for-the-badge&logo=x&logoColor=white)](https://github.com/sum-kaur)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hi@sumneet.com)

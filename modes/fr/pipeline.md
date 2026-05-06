@@ -1,6 +1,6 @@
-# Mode : pipeline -- Inbox d'URLs (Second Brain)
+﻿# Mode : pipeline -- Inbox d'URLs (Second Brain)
 
-Traite les URLs d'offres accumulees dans `data/pipeline.md`. Le candidat ajoute des URLs quand il veut et lance ensuite `/career-ops pipeline` pour toutes les traiter d'un coup.
+Traite les URLs d'offres accumulees dans `data/pipeline.md`. Le candidat ajoute des URLs quand il veut et lance ensuite `/australia-job-finder pipeline` pour toutes les traiter d'un coup.
 
 ## Workflow
 

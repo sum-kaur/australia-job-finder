@@ -1,9 +1,9 @@
-# Career-Ops
+﻿# Australia-Job-Finder
 
 [English](README.md) | [Español](README.es.md) | [Português (Brasil)](README.pt-BR.md) | [한국어](README.ko-KR.md) | [日本語](README.ja.md) | [Русский](README.ru.md) | [简体中文](README.cn.md) | [繁體中文](README.zh-TW.md)
 
 <p align="center">
-  <a href="https://x.com/santifer"><img src="docs/hero-banner.jpg" alt="Career-Ops — Multi-Agent Job Search System" width="800"></a>
+  <a href="https://github.com/sum-kaur"><img src="docs/hero-banner.jpg" alt="Australia-Job-Finder — AI Job Search for Australian Tech" width="800"></a>
 </p>
 
 <p align="center">
@@ -32,7 +32,7 @@
 ---
 
 <p align="center">
-  <img src="docs/demo.gif" alt="Career-Ops Demo" width="800">
+  <img src="docs/demo.gif" alt="Australia-Job-Finder Demo" width="800">
 </p>
 
 <p align="center"><strong>740+ vagas avaliadas · 100+ CVs personalizados · 1 vaga dos sonhos conquistada</strong></p>
@@ -41,7 +41,7 @@
 
 ## O que é isso
 
-Career-Ops transforma qualquer CLI de código com IA em uma central completa de busca de emprego. Em vez de acompanhar candidaturas manualmente em planilha, você tem um pipeline com IA que:
+Australia-Job-Finder transforma qualquer CLI de código com IA em uma central completa de busca de emprego. Em vez de acompanhar candidaturas manualmente em planilha, você tem um pipeline com IA que:
 
 - **Avalia vagas** com um sistema estruturado de pontuação A-F (10 dimensões com pesos)
 - **Gera PDFs personalizados** -- CVs otimizados para ATS, ajustados por descrição de vaga
@@ -55,7 +55,7 @@ Career-ops é agentic: Claude Code navega páginas de carreira com Playwright, a
 
 > **Aviso: as primeiras avaliações não vão ser ótimas.** O sistema ainda não conhece você. Dê contexto -- seu CV, sua trajetória profissional, suas provas de resultado, suas preferências, no que você é bom e o que quer evitar. Quanto mais você alimenta, melhor ele fica. Pense nisso como o onboarding de um novo recrutador: na primeira semana ele precisa te conhecer, depois se torna indispensável.
 
-Construído por alguém que usou isso para avaliar 740+ vagas, gerar 100+ CVs personalizados e conquistar uma posição de Head of Applied AI. [Leia o estudo de caso completo](https://santifer.io/career-ops-system).
+Construído por alguém que usou isso para avaliar 740+ vagas, gerar 100+ CVs personalizados e conquistar uma posição de Head of Applied AI. [Leia o estudo de caso completo](https://sumneet.com/australia-job-finder-system).
 
 ## Funcionalidades
 
@@ -76,8 +76,8 @@ Construído por alguém que usou isso para avaliar 740+ vagas, gerar 100+ CVs pe
 
 ```bash
 # 1. Clone e instale
-git clone https://github.com/santifer/career-ops.git
-cd career-ops && npm install
+git clone https://github.com/sum-kaur/australia-job-finder.git
+cd australia-job-finder && npm install
 npx playwright install chromium   # Necessário para geração de PDF
 
 # 2. Verifique o setup
@@ -100,7 +100,7 @@ claude   # Abra o Claude Code neste diretório
 # "Atualize meu perfil com este CV que vou colar"
 
 # 6. Comece a usar
-# Cole a URL de uma vaga ou rode /career-ops
+# Cole a URL de uma vaga ou rode /australia-job-finder
 ```
 
 > **O sistema foi projetado para ser customizado pelo próprio Claude.** Modos, arquétipos, pesos de pontuação, scripts de negociação -- é só pedir para ele alterar. Ele lê os mesmos arquivos que usa, então sabe exatamente o que editar.
@@ -112,21 +112,21 @@ Veja [docs/SETUP.md](docs/SETUP.md) para o guia completo de configuração.
 Career-ops é um único comando slash com múltiplos modos:
 
 ```
-/career-ops                → Mostrar todos os comandos disponíveis
-/career-ops {cole um JD}   → Auto-pipeline completo (avaliar + PDF + tracker)
-/career-ops scan           → Escanear portais por novas vagas
-/career-ops pdf            → Gerar CV otimizado para ATS
-/career-ops batch          → Avaliar múltiplas vagas em lote
-/career-ops tracker        → Ver status das candidaturas
-/career-ops apply          → Preencher formulários de candidatura com IA
-/career-ops pipeline       → Processar URLs pendentes
-/career-ops contacto       → Mensagem de outreach no LinkedIn
-/career-ops deep           → Pesquisa aprofundada da empresa
-/career-ops training       → Avaliar um curso/certificação
-/career-ops project        → Avaliar um projeto de portfólio
+/australia-job-finder                → Mostrar todos os comandos disponíveis
+/australia-job-finder {cole um JD}   → Auto-pipeline completo (avaliar + PDF + tracker)
+/australia-job-finder scan           → Escanear portais por novas vagas
+/australia-job-finder pdf            → Gerar CV otimizado para ATS
+/australia-job-finder batch          → Avaliar múltiplas vagas em lote
+/australia-job-finder tracker        → Ver status das candidaturas
+/australia-job-finder apply          → Preencher formulários de candidatura com IA
+/australia-job-finder pipeline       → Processar URLs pendentes
+/australia-job-finder contacto       → Mensagem de outreach no LinkedIn
+/australia-job-finder deep           → Pesquisa aprofundada da empresa
+/australia-job-finder training       → Avaliar um curso/certificação
+/australia-job-finder project        → Avaliar um projeto de portfólio
 ```
 
-Ou apenas cole uma URL ou descrição de vaga diretamente -- career-ops detecta automaticamente e roda o pipeline completo.
+Ou apenas cole uma URL ou descrição de vaga diretamente -- australia-job-finder detecta automaticamente e roda o pipeline completo.
 
 ## Como funciona
 
@@ -225,27 +225,27 @@ career-ops/
 
 ## Também open source
 
-- **[cv-santiago](https://github.com/santifer/cv-santiago)** -- O site de portfólio (santifer.io) com chatbot de IA, dashboard de LLMOps e estudos de caso. Se você precisa de um portfólio para acompanhar sua busca por vagas, faça um fork e adapte para você.
+- **[cv-santiago](https://github.com/sum-kaur/cv-santiago)** -- O site de portfólio (sumneet.com) com chatbot de IA, dashboard de LLMOps e estudos de caso. Se você precisa de um portfólio para acompanhar sua busca por vagas, faça um fork e adapte para você.
 
 ## Sobre o autor
 
-Sou o Santiago -- Head of Applied AI, ex-fundador (criei e vendi uma empresa que ainda opera com meu nome). Eu construí o career-ops para gerenciar minha própria busca de emprego. Funcionou: usei o sistema para conquistar meu cargo atual.
+Sou o Santiago -- Head of Applied AI, ex-fundador (criei e vendi uma empresa que ainda opera com meu nome). Eu construí o australia-job-finder para gerenciar minha própria busca de emprego. Funcionou: usei o sistema para conquistar meu cargo atual.
 
-Meu portfólio e outros projetos open source → [santifer.io](https://santifer.io)
+Meu portfólio e outros projetos open source → [sumneet.com](https://sumneet.com)
 
 ## Star History
 
-<a href="https://www.star-history.com/?repos=santifer%2Fcareer-ops&type=timeline&legend=top-left">
+<a href="https://www.star-history.com/?repos=sum-kaur%2Faustralia-job-finder&type=timeline&legend=top-left">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=santifer/career-ops&type=timeline&theme=dark&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=santifer/career-ops&type=timeline&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=santifer/career-ops&type=timeline&legend=top-left" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=sum-kaur/australia-job-finder&type=timeline&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=sum-kaur/australia-job-finder&type=timeline&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=sum-kaur/australia-job-finder&type=timeline&legend=top-left" />
  </picture>
 </a>
 
 ## Aviso legal
 
-**career-ops é uma ferramenta local e open source — NÃO é um serviço hospedado.** Ao usar este software, você reconhece que:
+**australia-job-finder é uma ferramenta local e open source — NÃO é um serviço hospedado.** Ao usar este software, você reconhece que:
 
 1. **Você controla seus dados.** Seu CV, informações de contato e dados pessoais ficam na sua máquina e são enviados diretamente para o provedor de IA que você escolher (Anthropic, OpenAI etc.). Nós não coletamos, armazenamos nem temos acesso aos seus dados.
 2. **Você controla a IA.** Os prompts padrão instruem a IA a não enviar candidaturas automaticamente, mas modelos de IA podem se comportar de forma imprevisível. Se você modificar os prompts ou usar modelos diferentes, faz isso por sua conta e risco. **Sempre revise o conteúdo gerado por IA antes de enviar.**
@@ -260,8 +260,8 @@ MIT
 
 ## Vamos nos conectar
 
-[![Website](https://img.shields.io/badge/santifer.io-000?style=for-the-badge&logo=safari&logoColor=white)](https://santifer.io)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/santifer)
-[![X](https://img.shields.io/badge/X-000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/santifer)
+[![Website](https://img.shields.io/badge/sumneet.com-000?style=for-the-badge&logo=safari&logoColor=white)](https://sumneet.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/sumneet-kaur)
+[![X](https://img.shields.io/badge/X-000?style=for-the-badge&logo=x&logoColor=white)](https://github.com/sum-kaur)
 [![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/8pRpHETxa4)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hi@santifer.io)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hi@sumneet.com)

@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+﻿#!/usr/bin/env node
 
 /**
  * scan.mjs — Zero-token portal scanner
@@ -557,7 +557,7 @@ async function main() {
     }
   }
 
-  console.log(`\n→ Run /career-ops pipeline to evaluate new offers.`);
+  console.log(`\n→ Run /australia-job-finder pipeline to evaluate new offers.`);
 }
 
 main().catch(err => {

@@ -1,4 +1,4 @@
-# Modo: scan — Portal Scanner (Descubrimiento de Ofertas)
+﻿# Modo: scan — Portal Scanner (Descubrimiento de Ofertas)
 
 Escanea portales de empleo configurados, filtra por relevancia de título, y añade nuevas ofertas al pipeline para evaluación posterior.
 
@@ -184,7 +184,7 @@ Nuevas añadidas a pipeline.md: N
   + {company} | {title} | {query_name}
   ...
 
-→ Ejecuta /career-ops pipeline para evaluar las nuevas ofertas.
+→ Ejecuta /australia-job-finder pipeline para evaluar las nuevas ofertas.
 ```
 
 ## Gestión de careers_url
