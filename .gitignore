@@ -46,5 +46,11 @@ bun.lock
 # Claude Code local
 .claude/settings.local.json
 .claude/memory/
+.claude/worktrees/
+.claire/
 career-dashboard
 package-lock.json
+
+# Session files
+caveman.md
+*.caveman.md
