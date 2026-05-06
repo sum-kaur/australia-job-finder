@@ -300,13 +300,19 @@ function buildTitleFilter(titleFilter) {
 // ── Location filter ─────────────────────────────────────────────────
 // Drops jobs whose location contains any excluded string (case-insensitive).
 // Empty location always passes — remote-first companies often omit location.
+// auCompany: true → bypass filter entirely (AU-HQ companies always pass).
+// Pure remote tokens (Remote, Worldwide, etc.) always pass regardless of exclusions.
+
+const REMOTE_TOKENS = new Set(['remote', 'worldwide', 'global', 'anywhere', 'distributed']);
 
 function buildLocationFilter(excludeLocations) {
   if (!excludeLocations || excludeLocations.length === 0) return () => false;
   const patterns = excludeLocations.map(l => l.toLowerCase());
-  return (location) => {
+  return (location, auCompany = false) => {
+    if (auCompany) return false;
     if (!location) return false;
-    const lower = location.toLowerCase();
+    const lower = location.toLowerCase().trim();
+    if (REMOTE_TOKENS.has(lower)) return false;
     return patterns.some(p => lower.includes(p));
   };
 }
@@ -492,7 +498,8 @@ async function main() {
         }
 
         // Location filter — drops non-AU offices (Bengaluru, India, Manila, etc.)
-        if (isExcludedLocation(job.location)) {
+        // au_company: true bypasses filter; pure "Remote" tokens always pass.
+        if (isExcludedLocation(job.location, company.au_company)) {
           totalLocationFiltered++;
           continue;
         }

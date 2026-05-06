@@ -1038,48 +1038,48 @@ tracked_companies:
 
   - name: Culture Amp
     careers_url: https://job-boards.greenhouse.io/cultureamp
+    au_company: true
     api: https://boards-api.greenhouse.io/v1/boards/cultureamp/jobs
     notes: "Melbourne/Sydney AU. Employee experience platform. Active AI Engineer hiring (LangGraph, RAG, eval). Greenhouse verified."
     enabled: true
 
   - name: SafetyCulture
     careers_url: https://jobs.lever.co/safetyculture-2
+    au_company: true
     notes: "Sydney AU. Workplace safety SaaS. Lever board verified, AU mid-level roles."
     enabled: true
 
   - name: Canva
-    careers_url: https://jobs.ashbyhq.com/canva
-    api: https://jobs.ashbyhq.com/api/non-user-graphql?op=ApiJobBoardWithTeams
-    api_provider: ashby
-    api_slug: canva
-    notes: "Sydney AU. Design platform unicorn. Large engineering org, strong AI/ML team. Moved to Ashby."
+    careers_url: https://job-boards.greenhouse.io/canva
+    au_company: true
+    api: https://boards-api.greenhouse.io/v1/boards/canva/jobs
+    notes: "Sydney AU. Design platform unicorn. Large engineering org, strong AI/ML team. Greenhouse verified."
     enabled: true
 
   - name: Atlassian
-    careers_url: https://jobs.ashbyhq.com/Atlassian
-    api: https://jobs.ashbyhq.com/api/non-user-graphql?op=ApiJobBoardWithTeams
-    api_provider: ashby
-    api_slug: Atlassian
-    notes: "Sydney AU. Jira/Confluence/Rovo. Large AU engineering presence. Moved to Ashby."
+    careers_url: https://job-boards.greenhouse.io/atlassian
+    au_company: true
+    api: https://boards-api.greenhouse.io/v1/boards/atlassian/jobs
+    notes: "Sydney AU. Jira/Confluence/Rovo. Large AU engineering presence. Greenhouse verified."
     enabled: true
 
   # -- AU fintech / lending --
 
   - name: Plenti
     careers_url: https://jobs.lever.co/plenti
+    au_company: true
     notes: "Sydney AU. Green lending fintech. AI-driven credit scoring. Lever board verified."
     enabled: true
 
   - name: Airwallex
     careers_url: https://jobs.ashbyhq.com/airwallex
-    api: https://jobs.ashbyhq.com/api/non-user-graphql?op=ApiJobBoardWithTeams
-    api_provider: ashby
-    api_slug: airwallex
+    au_company: true
     notes: "Sydney AU HQ. Cross-border payments. Large Ashby board (~600 total jobs). Use exclude_locations to filter AU only."
     enabled: true
 
   - name: Afterpay / Block
     careers_url: https://job-boards.greenhouse.io/block
+    au_company: true
     api: https://boards-api.greenhouse.io/v1/boards/block/jobs
     notes: "Sydney AU. BNPL / fintech. Block (Square) AU engineering hub. Greenhouse verified."
     enabled: true
@@ -1087,45 +1087,48 @@ tracked_companies:
   # -- AU SaaS & platforms --
 
   - name: Atlassian Ventures / Loom
-    careers_url: https://jobs.ashbyhq.com/loom
-    api: https://jobs.ashbyhq.com/api/non-user-graphql?op=ApiJobBoardWithTeams
-    api_provider: ashby
-    api_slug: loom
-    notes: "Atlassian-acquired. Video messaging. Some AU roles. Moved to Ashby."
+    careers_url: https://job-boards.greenhouse.io/loom
+    au_company: true
+    api: https://boards-api.greenhouse.io/v1/boards/loom/jobs
+    notes: "Atlassian-acquired. Video messaging. Some AU roles."
     enabled: true
 
   - name: Deputy
     careers_url: https://jobs.lever.co/deputy
+    au_company: true
     notes: "Sydney AU. Workforce management SaaS. Lever board verified, mid-level AU roles."
     enabled: true
 
   - name: Secure Code Warrior
     careers_url: https://jobs.lever.co/securecodewarrior
+    au_company: true
     notes: "Sydney AU. Developer security training platform. Lever board verified."
     enabled: true
 
   - name: Prospa
     careers_url: https://job-boards.greenhouse.io/prospa
+    au_company: true
     api: https://boards-api.greenhouse.io/v1/boards/prospa/jobs
     notes: "Sydney AU. Small business lending fintech. Greenhouse verified."
     enabled: true
 
   - name: Employment Hero
-    careers_url: https://jobs.ashbyhq.com/employmenthero
-    api: https://jobs.ashbyhq.com/api/non-user-graphql?op=ApiJobBoardWithTeams
-    api_provider: ashby
-    api_slug: employmenthero
-    notes: "Sydney AU. HR/payroll SaaS unicorn. Active engineering hiring. Moved to Ashby."
+    careers_url: https://job-boards.greenhouse.io/employmenthero
+    au_company: true
+    api: https://boards-api.greenhouse.io/v1/boards/employmenthero/jobs
+    notes: "Sydney AU. HR/payroll SaaS unicorn. Active engineering hiring. Greenhouse verified."
     enabled: true
 
   - name: Immutable
-    careers_url: https://jobs.lever.co/immutable
-    api: https://api.lever.co/v0/postings/immutable?mode=json
-    notes: "Sydney AU. Web3 gaming + blockchain. Lever verified. Filter with negative keywords if not interested in Web3."
+    careers_url: https://job-boards.greenhouse.io/immutable
+    au_company: true
+    api: https://boards-api.greenhouse.io/v1/boards/immutable/jobs
+    notes: "Sydney AU. Web3 gaming + blockchain. Greenhouse verified. Filter with negative keywords if not interested in Web3."
     enabled: true
 
   - name: Aconex / Oracle Construction
     careers_url: https://job-boards.greenhouse.io/aconex
+    au_company: true
     api: https://boards-api.greenhouse.io/v1/boards/aconex/jobs
     notes: "Melbourne AU. Construction project management (Oracle). Greenhouse verified."
     enabled: false
@@ -1134,6 +1137,7 @@ tracked_companies:
 
   - name: Telstra
     careers_url: https://telstra.wd3.myworkdayjobs.com/Telstra_Careers
+    au_company: true
     api_provider: workday
     workday_tenant: telstra
     workday_instance: wd3
@@ -1143,6 +1147,7 @@ tracked_companies:
 
   - name: Commonwealth Bank (CBA)
     careers_url: https://cba.wd3.myworkdayjobs.com/CommBank
+    au_company: true
     api_provider: workday
     workday_tenant: cba
     workday_instance: wd3
@@ -1151,122 +1156,257 @@ tracked_companies:
     enabled: true
 
   - name: REA Group
-    careers_url: https://jobs.ashbyhq.com/rea
-    api: https://jobs.ashbyhq.com/api/non-user-graphql?op=ApiJobBoardWithTeams
-    api_provider: ashby
-    api_slug: rea
-    notes: "Melbourne AU. Property marketplace (realestate.com.au). Strong data/ML team. Moved to Ashby."
+    careers_url: https://job-boards.greenhouse.io/rea
+    au_company: true
+    api: https://boards-api.greenhouse.io/v1/boards/rea/jobs
+    notes: "Melbourne AU. Property marketplace (realestate.com.au). Strong data/ML team. Greenhouse verified."
     enabled: true
 
   - name: Seek
-    careers_url: https://jobs.ashbyhq.com/seek
-    api: https://jobs.ashbyhq.com/api/non-user-graphql?op=ApiJobBoardWithTeams
-    api_provider: ashby
-    api_slug: seek
-    notes: "Melbourne AU. Jobs marketplace. Active ML/AI platform team. Moved to Ashby."
+    careers_url: https://job-boards.greenhouse.io/seek
+    au_company: true
+    api: https://boards-api.greenhouse.io/v1/boards/seek/jobs
+    notes: "Melbourne AU. Jobs marketplace. Active ML/AI platform team. Greenhouse verified."
     enabled: true
 
   # -- AU media, gov & health tech --
 
   - name: ABC (Australian Broadcasting Corporation)
     careers_url: https://www.abc.net.au/careers
+    au_company: true
     scan_method: websearch
     scan_query: 'site:abc.net.au/careers "Engineer" OR "Developer" OR "Data" OR "Technology"'
     notes: "Sydney/Melbourne AU. National broadcaster. Digital/tech roles on careers page."
     enabled: false
 
   - name: Healthscope / Medibank
-    careers_url: https://jobs.ashbyhq.com/medibank
-    api: https://jobs.ashbyhq.com/api/non-user-graphql?op=ApiJobBoardWithTeams
-    api_provider: ashby
-    api_slug: medibank
-    notes: "Melbourne AU. Health insurance + digital health. AI/data roles. Moved to Ashby."
+    careers_url: https://job-boards.greenhouse.io/medibank
+    au_company: true
+    api: https://boards-api.greenhouse.io/v1/boards/medibank/jobs
+    notes: "Melbourne AU. Health insurance + digital health. AI/data roles. Greenhouse verified."
     enabled: true
 
   - name: Dovetail
     careers_url: https://jobs.ashbyhq.com/dovetail
+    au_company: true
     notes: "Sydney AU. User research platform. AI-powered insights. Ashby board verified."
     enabled: true
 
   - name: Octopus Deploy
     careers_url: https://jobs.lever.co/octopus
+    au_company: true
     notes: "Brisbane AU. DevOps automation platform. Remote-friendly. Lever board verified."
     enabled: true
 
   - name: Clipchamp (Microsoft)
     careers_url: https://job-boards.greenhouse.io/clipchamp
+    au_company: true
     api: https://boards-api.greenhouse.io/v1/boards/clipchamp/jobs
     notes: "Brisbane AU. AI video editor acquired by Microsoft. Greenhouse verified."
     enabled: false
 
   - name: Buildkite
-    careers_url: https://jobs.ashbyhq.com/buildkite
-    api: https://jobs.ashbyhq.com/api/non-user-graphql?op=ApiJobBoardWithTeams
-    api_provider: ashby
-    api_slug: buildkite
-    notes: "Melbourne AU (remote-first). CI/CD platform. Engineering + platform roles. Moved to Ashby."
+    careers_url: https://jobs.lever.co/buildkite
+    au_company: true
+    notes: "Melbourne AU (remote-first). CI/CD platform. Engineering + platform roles. Lever verified."
     enabled: true
 
   - name: Vend / Lightspeed
-    careers_url: https://jobs.ashbyhq.com/lightspeed
-    api: https://jobs.ashbyhq.com/api/non-user-graphql?op=ApiJobBoardWithTeams
-    api_provider: ashby
-    api_slug: lightspeed
-    notes: "AU offices (Auckland NZ origin). Retail POS + AI. Moved to Ashby."
+    careers_url: https://job-boards.greenhouse.io/lightspeedcommerce
+    au_company: true
+    api: https://boards-api.greenhouse.io/v1/boards/lightspeedcommerce/jobs
+    notes: "AU offices (Auckland NZ origin). Retail POS + AI. Greenhouse verified."
     enabled: true
 
   - name: MYOB
-    careers_url: https://jobs.ashbyhq.com/myob
-    api: https://jobs.ashbyhq.com/api/non-user-graphql?op=ApiJobBoardWithTeams
-    api_provider: ashby
-    api_slug: myob
-    notes: "Melbourne AU. Accounting/ERP SaaS. Engineering and data roles. Moved to Ashby."
+    careers_url: https://jobs.lever.co/myob
+    au_company: true
+    notes: "Melbourne AU. Accounting/ERP SaaS. Engineering and data roles. Lever verified."
     enabled: true
 
   - name: hipages
     careers_url: https://jobs.lever.co/hipages
+    au_company: true
     notes: "Sydney AU. Home services marketplace. Platform and ML roles. Lever board - verify before scan."
     enabled: false
 
   - name: Zip Co
-    careers_url: https://jobs.ashbyhq.com/zip
-    api: https://jobs.ashbyhq.com/api/non-user-graphql?op=ApiJobBoardWithTeams
-    api_provider: ashby
-    api_slug: zip
-    notes: "Sydney AU. BNPL fintech. Platform/data engineering. Moved to Ashby."
+    careers_url: https://job-boards.greenhouse.io/zipco
+    au_company: true
+    api: https://boards-api.greenhouse.io/v1/boards/zipco/jobs
+    notes: "Sydney AU. BNPL fintech. Platform/data engineering. Greenhouse verified."
     enabled: true
 
   - name: Siteminder
-    careers_url: https://jobs.ashbyhq.com/siteminder
-    api: https://jobs.ashbyhq.com/api/non-user-graphql?op=ApiJobBoardWithTeams
-    api_provider: ashby
-    api_slug: siteminder
-    notes: "Sydney AU. Hotel distribution SaaS. Engineering roles. Moved to Ashby."
+    careers_url: https://jobs.lever.co/siteminder
+    au_company: true
+    notes: "Sydney AU. Hotel distribution SaaS. Engineering roles. Lever board - AU filter required."
     enabled: true
 
   - name: Linktree
-    careers_url: https://jobs.ashbyhq.com/linktree
-    api: https://jobs.ashbyhq.com/api/non-user-graphql?op=ApiJobBoardWithTeams
-    api_provider: ashby
-    api_slug: linktree
-    notes: "Melbourne AU. Link-in-bio platform. Engineering/data roles. Moved to Ashby."
+    careers_url: https://jobs.lever.co/linktree
+    au_company: true
+    notes: "Melbourne AU. Link-in-bio platform. Engineering/data roles. Lever board verified."
     enabled: true
 
   - name: Brighte
     careers_url: https://jobs.lever.co/brighte
+    au_company: true
     notes: "Sydney AU. Green energy fintech. Data/platform engineering. Lever board verified."
     enabled: true
 
   - name: Xero
-    careers_url: https://jobs.ashbyhq.com/xero
-    api: https://jobs.ashbyhq.com/api/non-user-graphql?op=ApiJobBoardWithTeams
-    api_provider: ashby
-    api_slug: xero
-    notes: "AU/NZ. Accounting SaaS. Large engineering org, ML and platform roles. Moved to Ashby."
+    careers_url: https://job-boards.greenhouse.io/xero
+    au_company: true
+    api: https://boards-api.greenhouse.io/v1/boards/xero/jobs
+    notes: "AU/NZ. Accounting SaaS. Large engineering org, ML and platform roles. Greenhouse verified."
     enabled: true
 
   - name: Airtasker
     careers_url: https://jobs.lever.co/airtasker
+    au_company: true
     notes: "Sydney AU. Services marketplace. Engineering roles. Lever board - verify before scan."
     enabled: false
+
+  - name: Rokt
+    careers_url: https://jobs.ashbyhq.com/rokt
+    au_company: true
+    notes: "Sydney AU. eCommerce AI and personalization platform. Ashby board verified."
+    enabled: true
+
+  - name: Tyro Payments
+    careers_url: https://jobs.ashbyhq.com/tyro
+    au_company: true
+    notes: "Sydney AU. Australian fintech bank / EFTPOS platform. Ashby board verified."
+    enabled: true
+
+  - name: Up Bank
+    careers_url: https://jobs.ashbyhq.com/up
+    au_company: true
+    notes: "Melbourne AU. Digital bank (Bendigo Bank). Engineering-forward culture. Ashby board verified."
+    enabled: true
+
+  - name: Eucalyptus
+    careers_url: https://jobs.ashbyhq.com/eucalyptus
+    au_company: true
+    notes: "Sydney AU. Digital health company (Pilot, Juniper). Strong engineering/data team. Ashby board verified."
+    enabled: true
+
+  - name: Envato
+    careers_url: https://jobs.ashbyhq.com/envato
+    au_company: true
+    notes: "Melbourne AU. Creative assets marketplace (ThemeForest, Elements). Ashby board verified."
+    enabled: true
+
+  - name: PEXA Group
+    careers_url: https://jobs.ashbyhq.com/pexa
+    au_company: true
+    notes: "Melbourne AU. Digital property settlement platform. Ashby board verified."
+    enabled: true
+
+  - name: Iress
+    careers_url: https://jobs.ashbyhq.com/iress
+    au_company: true
+    notes: "Melbourne AU. Financial services technology. Ashby board verified."
+    enabled: true
+
+  - name: WiseTech Global
+    careers_url: https://jobs.ashbyhq.com/wistech
+    au_company: true
+    notes: "Sydney AU. Logistics software (CargoWise). Large AU engineering org. Ashby board verified."
+    enabled: true
+
+  - name: Nearmap
+    careers_url: https://jobs.ashbyhq.com/nearmap
+    au_company: true
+    notes: "Sydney AU. Aerial imagery and AI analytics. Ashby board verified."
+    enabled: true
+
+  - name: Coviu
+    careers_url: https://jobs.ashbyhq.com/coviu
+    au_company: true
+    notes: "Sydney AU. Telehealth video platform. Ashby board verified."
+    enabled: true
+
+  - name: Quantium
+    careers_url: https://jobs.ashbyhq.com/quantium
+    au_company: true
+    notes: "Sydney AU. Data analytics and AI (Woolworths JV). Strong DS/ML team. Ashby board verified."
+    enabled: true
+
+  - name: Carsales
+    careers_url: https://jobs.ashbyhq.com/carsales
+    au_company: true
+    notes: "Melbourne AU. Automotive marketplace. AI/ML and data engineering roles. Ashby board verified."
+    enabled: true
+
+  - name: Redbubble
+    careers_url: https://jobs.ashbyhq.com/redbubble
+    au_company: true
+    notes: "Melbourne AU. Global print-on-demand marketplace. Platform/ML roles. Ashby board verified."
+    enabled: true
+
+  - name: Lendi Group
+    careers_url: https://jobs.ashbyhq.com/lendi
+    au_company: true
+    notes: "Sydney AU. Online mortgage broker and home loan platform. Ashby board verified."
+    enabled: true
+
+  - name: Wisr
+    careers_url: https://jobs.ashbyhq.com/wisr
+    au_company: true
+    notes: "Sydney AU. Neobank / responsible lending fintech. Ashby board verified."
+    enabled: true
+
+  - name: Appen
+    careers_url: https://jobs.lever.co/appen
+    au_company: true
+    notes: "Sydney AU. AI training data and annotation platform. Lever board verified."
+    enabled: true
+
+  # -- AU big banks (Workday ATS) --
+
+  - name: NAB (National Australia Bank)
+    careers_url: https://nab.wd3.myworkdayjobs.com/Careers
+    au_company: true
+    api_provider: workday
+    workday_tenant: nab
+    workday_instance: wd3
+    workday_board: Careers
+    au_company: true
+    notes: "Melbourne AU. Major bank. Strong data/AI/platform engineering org. Workday ATS."
+    enabled: true
+
+  - name: ANZ Bank
+    careers_url: https://anz.wd3.myworkdayjobs.com/ANZCareers
+    au_company: true
+    api_provider: workday
+    workday_tenant: anz
+    workday_instance: wd3
+    workday_board: ANZCareers
+    au_company: true
+    notes: "Melbourne AU. Major bank. Large technology division. Workday ATS."
+    enabled: true
+
+  - name: Westpac
+    careers_url: https://westpac.wd3.myworkdayjobs.com/WestpacCareers
+    au_company: true
+    api_provider: workday
+    workday_tenant: westpac
+    workday_instance: wd3
+    workday_board: WestpacCareers
+    au_company: true
+    notes: "Sydney AU. Major bank. Tech transformation underway; data/AI roles. Workday ATS."
+    enabled: true
+
+  - name: Macquarie Group
+    careers_url: https://macquarie.wd3.myworkdayjobs.com/MacquarieCareers
+    au_company: true
+    api_provider: workday
+    workday_tenant: macquarie
+    workday_instance: wd3
+    workday_board: MacquarieCareers
+    au_company: true
+    notes: "Sydney AU. Investment bank and asset manager. Strong quant/ML/platform teams. Workday ATS."
+    enabled: true
 
