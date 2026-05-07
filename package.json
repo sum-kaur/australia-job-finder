@@ -1,4 +1,4 @@
-﻿{
+{
   "name": "australia-job-finder",
   "version": "1.6.0",
   "description": "AI-powered job search pipeline built on Claude Code",
@@ -16,7 +16,8 @@
     "liveness": "node check-liveness.mjs",
     "scan": "node scan.mjs",
     "gemini:eval": "node gemini-eval.mjs",
-    "export": "node export-tracker.mjs"
+    "export": "node export-tracker.mjs",
+    "jobs-xlsx": "node export-jobs-xlsx.mjs"
   },
   "keywords": [
     "ai",
@@ -35,6 +36,7 @@
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
     "dotenv": "^16.4.5",
+    "exceljs": "^4.4.0",
     "js-yaml": "^4.1.1",
     "playwright": "^1.58.1"
   }
