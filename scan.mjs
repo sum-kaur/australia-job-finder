@@ -246,7 +246,11 @@ async function fetchWorkday(apiUrl, companyName) {
     });
     const json = await fetchJson(apiUrl, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+        'X-Requested-With': 'XMLHttpRequest',
+      },
       body,
     });
 
@@ -462,6 +466,7 @@ async function main() {
   let totalFound = 0;
   let totalTitleFiltered = 0;
   let totalLocationFiltered = 0;
+  let totalStaleFiltered = 0;
   let totalDupes = 0;
   const newOffers = [];
   const errors = [];
@@ -506,7 +511,7 @@ async function main() {
 
         // Recency filter
         if (!isRecent(job.publishedAt, maxAgeDays)) {
-          totalTitleFiltered++;
+          totalStaleFiltered++;
           continue;
         }
 
@@ -542,8 +547,9 @@ async function main() {
   console.log(`${'━'.repeat(50)}`);
   console.log(`Companies scanned:      ${targets.length}`);
   console.log(`Total jobs found:       ${totalFound}`);
-  console.log(`Filtered by title:      ${totalTitleFiltered} removed (Senior/Lead/non-target)`);
+  console.log(`Filtered by title:      ${totalTitleFiltered} removed (non-target role)`);
   console.log(`Filtered by location:   ${totalLocationFiltered} removed (non-AU)`);
+  console.log(`Filtered by age:        ${totalStaleFiltered} removed (older than ${maxAgeDays || '∞'} days)`);
   console.log(`Duplicates:             ${totalDupes} skipped`);
   console.log(`New offers added:       ${newOffers.length}`);
 
